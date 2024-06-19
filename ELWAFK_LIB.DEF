@@ -1,0 +1,6 @@
+; Filename: ELWAFK_EXP.DEF
+LIBRARY ELWAFK.DLL
+; *** Visual Studio 2022 EXPORT ALIASES ONLY ***
+; Away From Keys - Copyright (c) 2024 Elwynor Technologies, LLC
+EXPORTS
+    init__elwafk=_init__elwafk	@1

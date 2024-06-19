@@ -1,0 +1,50 @@
+    AFK
+    ---
+    
+    If you are like most people, you probably spend a lot of time
+    in Teleconference, and in the middle of chatting with your 
+    friends you have to do things like change music, get a Dew,
+    answer the door or your phone, etc. When you come back to
+    your keyboard, you often find that people have been talking
+    to you and paging you with no clue you were gone. This can be
+    frustrating for both you and your friends. AFK gives you a
+    chance to end these frustrations. With a simple global
+    command you tell people that you are leaving your keyboard,
+    and then tell them when you get back. For example, suppose
+    you are in Teleconference and you need to grab a candy bar
+    from the kitchen. You just type afk and this will tell
+    AFK you are away from your keyboard. Now if someone
+    talks to you or pages you and you don't answer, they can
+    type afk <your handle> and they will be told you are away
+    from your keyboard. 
+    
+    Optionally it may also display a message to everyone in your 
+    Teleconference channel that you are away from your keyboard. 
+    When you return you can type afk again, and optionally the 
+    command will tell everyone in your Teleconference channel 
+    that you are back, and anyone checking to see if you are away 
+    from your keyboard will be told you are there. Of course you 
+    can also check whether another user is at the keyboard by 
+    typing afk <handle>. 
+    
+    Optionally the module may also show your location in user
+    listings as "Away From Keyboard" or another such place if
+    you are AFK. You will be placed into the AFK module until 
+    you type afk again.
+    
+    Optionally the module may also set you "Busy" while you are
+    AFK. If this is the case then if anyone pages you while you
+    are gone they will know you did not receive their message.
+    When you return your "Busy" is turned off.
+    
+    To sum the module up, to both tell AFK you are away 
+    from your keyboard and back again, and optionally tell all 
+    users in your Teleconference channel or show your location
+    as "Away From Keyboard", you just type:
+    afk
+
+    To check whether another user is away from the keyboard, you
+    type:
+
+    afk <handle> where <handle> is the handle of the user you want
+    to know about.

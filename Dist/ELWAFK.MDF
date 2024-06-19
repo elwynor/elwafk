@@ -1,0 +1,27 @@
+; ELWAFK.MDF
+
+Module Name: AFK
+
+Developer: Elwynor Technologies
+
+Requires:
+Replaces:
+
+Install:
+
+Online user manual: ELWAFK.USR
+
+DLLs: ELWAFK
+MSGs: ELWAFK
+
+Btrieve files:     0
+
+Cleanup:
+
+Event-1:
+Event-2:
+Event-3:
+Event-4:
+
+Add-On Utility:
+

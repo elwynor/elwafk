@@ -1,0 +1,144 @@
+LEVEL3 {Elwynor Technologies: AFK}
+
+ This is the key users need to have to be able to use
+ the AFK module.
+
+AFKKEY {NORMAL} S 15 Key to use AFK
+
+
+LEVEL4 {Elwynor Technologies: AFK}
+
+ This is the string users type to use AFK. It
+ toggles their setting showing that they are away from
+ the keyboard.
+
+AFKSTR {afk} S 15 AFK command string
+
+ Answer YES if you have Away from Keyboard and Back at
+ Keyboard actions in your Teleconference that you want
+ AFK to call for users who leave and return, or else if
+ you wish option strings AFKCOM and BAKCOM to be displayed
+ when a user leaves and returns to the keyboard; otherwise
+ answer NO. Note that if you answer YES to option CHGLOC to
+ change a user's location while AFK, the strings will not
+ be displayed and no actions will be called.
+
+TELAFK {Use Teleconference strings when leaving and returning? YES} B
+
+ This is the name of the Teleconference module on your BBS.
+ Do not change this option unless your Teleconference has
+ a different name.
+
+TELNAM {Teleconference} S 25
+
+ This is the action name in your Teleconference for being
+ Away from Keyboard (afk), or what is displayed to others
+ in the Teleconference when a user leaves the keyboard.
+
+AFKCOM {brb} S 16
+
+ This is the action name in your Teleconference for being
+ Back at Keyboard (bak), or what is displayed to others
+ in the Teleconference when a user returns to the keyboard.
+
+BAKCOM {bak} S 16
+
+ Answer YES if you wnat users who are away from their
+ keyboards to have their location in user listings shown
+ as Away from Keyboard; otherwise, answer NO. Note that
+ if you answer YES, Teleconference strings will not be
+ displayed and actions will not be called.
+
+CHGLOC {Change user's location while AFK? YES} B
+
+ This is the location shown for users who are away from
+ their keyboards if you want user's locations to show that
+ they are away. This will be shown if you answered YES to
+ option CHGLOC.
+
+AFKLOC {Away From Keyboard} S 24 User's location while AFK
+
+ Answer YES if you want users who go AFK to be set "Busy"
+ while they are gone and restored when they return;
+ otherwise answer NO.
+
+SETBUSY {Set users "Busy" while they are AFK? YES} B
+
+
+LEVEL6 {Elwynor Technologies: AFK}
+
+ This message is displayed to users at log-on so they will
+ know how to use AFK.
+
+AFKALT {[0m
+[1mAFK v%s.
+[32mCopyright (C) 2024 Elwynor Technologies. All rights reserved.
+Type [33m%s ? [32mfor help on usage.
+} T Log-on Message to users
+
+ This is the help message for AFK.
+
+AFKHLP {[0m
+[1;32mAFK allows you to notify others that you are temporarily away from
+your keyboard. You type a global command when you leave your keyboard to
+let others know you're away. The command is typed as follows:
+[33m%s       [32mLets others know you're away from your keyboard
+When you return to your keyboard you simply type the command again to let
+others know you've returned.
+You check on other users and they check on you using the same command
+followed by the handle of the person to check. You do not have to type the
+entire handle, only enough of it that AFK knows who you mean, just like the
+/p paging command. For example, to see if your Sysop is away from the
+keyboard you could type:
+[33m%s [32msys
+Your current setting:
+According to AFK, you are currently %s your keyboard.
+} T AFK help
+
+ This message informs the user of what the new AFK setting
+ he toggled is.
+
+YOURAFK {[0m
+[1;32mOk, your AFK setting has been set to %s your keyboard.
+} T User's current AFK setting
+
+ This message tells the user that the person he wishes to be
+ notified about is not on-line.
+
+NOTON {[0m
+[1m%s [35mis not currently on-line.
+} T User is not on-line message
+
+ This message tells users that don't have the key to use
+ AFK they are out of luck.
+
+NOAFK {[0m
+[1;35mSorry, but you do not have access to this command.
+} T User cannot use AFK message
+
+ This message informs the user that there is more than one
+ possible match for the user-id he entered on-line; he must
+ be more specific for us to be able to notify him about this
+ person's AFK status.
+
+WHO {[0m
+[1;35mThere is more than one possible matching user-id on-line for the handle you
+gave, [37m%s[35m. You need to be more specific. For example, if both Mickey and
+Minnie are on-line, you could enter "[33m%s [35mmic" to to notified when Mickey is
+free to be paged
+} T More than one possible handle matches input message
+
+ This message notifies the user whether the person he is
+ checking on is at the keyboard.
+
+AFKSET {[0m
+[1m%s [32mis currently %s the keyboard.
+} T Show current AFK setting for a user
+
+ This message reminds the user how to return to where he
+ was before he went AFK.
+
+TOLEAVE {[0m
+[1;32mTo return to where you where before you went [37mAFK[32m, just type [33m%s[32m.
+} T How to leave AFK message
+

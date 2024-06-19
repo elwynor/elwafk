@@ -1,0 +1,103 @@
+                Release Notes for AFK 1.0
+                -------------------------
+        This module may interface with the Teleconference module if
+        you wish. You can create actions if you have the Entertainment
+        Teleconference which called when the user leaves the keyboard
+        and returns. The actions which get called are the string in
+        option BRBCOM when leaving the keyboard and BAKCOM when
+        returning. Of course if you don't have the Entertainment
+        Teleconference you can still have these commands or something
+        similar output for others to know that the user has left the
+        keyboard or returned. You could change the strings to something
+        like "I'll be right back" for BRBCOM and "I'm back" for BAKCOM.
+        The effect is best when you have actions set up however.         
+        The name of the option to choose in CNF to enable this is TELAFK.
+        
+        Another option you can choose is to have users who are AFK to
+        have their location in user listings displayed as "Away From
+        Keyboard" or a similar string you can edit. If you choose this
+        option, CHGLOC in CNF, then Teleconference actions and strings
+        will NOT work no matter whether you enable them or not. The
+        reason for this is that the user is actually temporarily put
+        into the AFK module while they are AFK, and so the
+        Teleconference will get the action or string after they are
+        put in AFK. You can use either option TELAFK or option 
+        CHGLOC, but not both. If you enable both, then only option 
+        CHGLOC will actually be used by the module (location will 
+        change and Teleconference strings and actions will not be used).
+        
+        Finally, note that you need to make a menu choice for 
+        AFK. This is because it needs to be done for changing the user's 
+        location in user listings. Users will not be able to enter the
+        module any way other than using the global command, and only
+        if you enable option CHGLOC. This is normal behavior and is
+        really what you want, since you don't want users entering this
+        module any other way. You can key visibility to the module and
+        make it so normal users can't even see it if you wish.
+
+                Release Notes for AFK 1.1
+                -------------------------
+        This version adds the option for users to be turned "Busy"
+        while they are AFK. This option can be turned on or off
+        in CNF LEVEL4 {}. When users return to the keyboard their
+        "Busy" is turned back off again. It is otherwise identical
+        to version 1.0. There is no charge for this upgrade for
+        registered owners of AFK 1.0.
+
+        As a final note, you will need to make a menu option for
+        this module. Users will not be able to enter the module
+        using the menu choice or the /go command.
+
+                Release Notes for AFK 1.2
+                -------------------------
+        This update is a bug fix for Worldgroup systems. Earlier
+        versions will cause a catastro on initialization with
+        Worldgroup, with an error message saying "Module Name ""
+        Too Short". It adds no new features, and is a FREE upgrade
+        for all registered owners of AFK version 1.1
+
+                Release Notes for AFK 1.3
+                -------------------------
+        This upgrade changes the DEMO period from 2 hours to 7 days,
+        and changes the access code generation method. It is a free
+        upgrade for all registered owners of AFK, but you will
+        need to contact directly for a new access code.
+        The DEMO period has been changed from 2 hours to a 7 day
+        trial period. The module is in DEMO mode for the first 7
+        days on your system, EXPIRED after the 7 day DEMO period is
+        up, and COMMERCIAL when you purchase an access code for the
+        module. The module is not crippled during the DEMO period,
+        but will not run once it is EXPIRED until you purchase the
+        access code to keep it running.
+
+                Release Notes for AFK 1.3W
+                --------------------------
+        This upgrade adds no new features and is for compatibility
+        with Worldgroup version 3.0 WIN NT/95. It is available to
+        registered owners of AFK for $17.50.
+
+                Release Notes for AFK 1.4
+                -------------------------
+        This upgrade adds compatibility for Worldgroup 3.2.
+        It remedies the limitation where you cannot set both 
+        TELAFK and CHGLOC. Both can now be set and work! Note
+        that if a user is set to BUSY, he/she cannot be 
+        paged or disturbed, but if AFK from teleconference,
+        will still see the teleconference banter that went
+        on while away, so nothing gets missed.
+        
+        The access code generation method is changed in this
+        release.
+                
+        The module is now free, and maintained by Elwynor 
+        Technologies.
+
+                Release Notes for AFK 1.5
+                -------------------------
+
+        This module is now free and no longer requires registration.
+        
+        This is also the first version natively compiled for Major BBS v10.
+        
+        It's open sourced and available on elwynor github.
+        
